@@ -19,85 +19,76 @@
     </tr>
     <tr>
       <td>班级:</td>
-      <td><form><input type="text"/></form></td>
+      <td><form method="GET" class="class"><input type="text"/></form></td>
       <td>学号：</td>
-      <td><form><input type="text"/></form></td>
+      <td><form method="GET" class="st_umber"><input type="text"/></form></td>
       <td>姓名：</td>
-      <td><form><input type="text"/></form></td>
+      <td><form method="GET" class="name"><input type="text"/></form></td>
     </tr>
   </table>
   <h3>一、填空题（每空5分，共20分）</h3>
-    <ul  style="list-style-type: decimal;">
-      <li><form>UML的中文全称是: <input type="text"/></form></li></li>
-      <li><form>对象最突出的特征是: <input type="text"/> <input type="text"/> <input type="text"/></form></li></li>
-    </ul>
+    <form action="" method="" class="gap_filling">
+        <label for="1-1">UML的中文全称是:</label> 
+        <input type="text" id="1-1"/><br/>
+        <label for="1-2">对象最突出的特征是:</label>
+        <input type="text" id="1-1"/>
+    </form>
   <h3>二、选择题（每题10分，共20分）</h3>
-    <ul style="list-style-type: decimal;">
-      <li>
-          UML与软件工程的关系是:
-          <form>
-            <input type="radio" name="relationsh" checked/>  (A) UML就是软件工程 <br/>
-            <input type="radio" name="relationsh"/>  (B) UML参与到软件工程中软件开发过程的几个阶段 <br/>
-            <input type="radio" name="relationsh"/>  (C) UML与软件工程无关 <br/>
-            <input type="radio" name="relationsh"/>  (D) UML是软件工程的一部分<br/>
-          </form> 
-      </li>
-      <li>
-          Java语言支持：
-          <form>
-            <input type="radio" name="support"  checked/> (A) 单继承 <br/>
-            <input type="radio" name="support" />  (B) 多继承 <br/>
-            <input type="radio" name="support" />  (C) 单继承和多继承都支持<br/>
-            <input type="radio" name="support" />  (D) 单继承和多继承都不支持<br/>
-          </form> 
-      </li>
-    </ul>
+  <form action="" method="GET" class="single_choice">
+    <div class="2-1">
+      1. UML与软件工程的关系是：</br>
+      <input type="radio" name="2-1" id="2-1-A"><label for="2-1-A">(A)UML就是软件工程</label></br>
+      <input type="radio" name="2-1" id="2-1-B"checked><label for="2-1-B">(B)UML参与到软件工程中软件开发过程的几个阶段</label></br>
+      <input type="radio" name="2-1" id="2-1-C"><label for="2-1-C">(C)UML与软件工程无关</label></br>
+      <input type="radio" name="2-1" id="2-1-D"><label for="2-1-D">(D)UML是软件工程的一部分</label></br></br>
+    </div>
+    <div class="2-2"></div>
+      2. Java语言支持：</br>
+      <input type="radio" name="2-2" id="2-2-A" checked><label for="2-2-A">(A)单继承</label></br>
+      <input type="radio" name="2-2" id="2-2-B"><label for="2-2-B">(B)多继承</label></br>
+      <input type="radio" name="2-2" id="2-2-C"><label for="2-2-C">(C)单继承和多继承都支持</label></br>
+      <input type="radio" name="2-2" id="2-2-D"><label for="2-2-D">(D)单继承和多继承都不支持</label></br>
+    </div>
   <h3>三、多择题（每题10分，共20分）</h3>
-    <ul style="list-style-type: decimal;">
-      <li>
-          用例的粒度分为以下哪三种:
-          <form>
-            <input type="checkbox" name="粒度分类" value="0" checked/> (A) 概述级 <br/>
-            <input type="checkbox" name="粒度分类" value="1"/> (B) 需求级<br/>
-            <input type="checkbox" name="粒度分类" value="2"/> (C) 用户目标级<br/>
-            <input type="checkbox" name="粒度分类" value="3"/> (D) 子功能级<br/>
-          </form> 
-      </li>
-      <li>
-          类图由以下哪三部分组成:
-          <form>
-            <input type="checkbox" name="support"  checked/>  (A) 名称(Name)  <br/>
-            <input type="checkbox" name="support" />   (B) 属性(Attribute)  <br/>
-            <input type="checkbox" name="support" />  (C) 操作(Operation) <br/>
-            <input type="checkbox" name="support" />  (D) 方法(Function)<br/>
-          </form>
-      </li>
-    </ul>
+    <form form action="" method="GET" class="multi_choice">
+      <div class="3-1">
+          <p>1.用例的粒度分为以下哪三种:</p>
+          <input type="checkbox" name="3-1" value="3-1-A" checked/><label for="3-1-A">(A) 概述级</label><br/>
+          <input type="checkbox" name="3-1" value="3-1-B"/><label for="3-1-B"> (B) 需求级</label><br/>
+          <input type="checkbox" name="3-1" value="3-1-C"/><label for="3-1-C"> (C) 用户目标级</label><br/>
+          <input type="checkbox" name="3-1" value="3-1-D"/><label for="3-1-D">(D) 子功能级</label> <br/>
+      </div>
+      <div class="3-2"> 
+          <p>2.类图由以下哪三部分组成:</p>
+          <input type="checkbox" name="3-2" value="3-2-A" checked/><label for="3-2-A">(A) 名称(Name)</label><br/>
+          <input type="checkbox" name="3-2" value="3-2-B"/><label for="3-2-B">(B) 属性(Attribute)</label><br/>
+          <input type="checkbox" name="3-2" value="3-2-C"/><label for="3-2-C">(C) 操作(Operation)</label><br/>
+          <input type="checkbox" name="3-2" value="3-2-D"/><label for="3-2-D">(D) 方法(Function)</label><br/>
+      </div>
+    </form> 
   <h3>四、判断题（每题10分，共20分）</h3>
-  <ul style="list-style-type: decimal;">
-    <li>
-        <form>
-            用例图只是用于和客户交流和沟通的,用于确定需求。
-            <input type="radio" name="judge" checked/>√
-            <input type="radio" name="judge"/>×
-        </form>
-    </li>
-    <li>
-        <form>
-            在状态图中,终止状态在一个状态图中允许有任意多个。
-          <input type="radio" name="judge" checked/>√
-          <input type="radio" name="judge"/>×
-        </form>
-    </li>
-  </ul>
+    <form action="" method="GET" class="judge">
+      <div class="4-1">
+          <label for="4-1"> 1.用例图只是用于和客户交流和沟通的，用于确定需求。</label>
+          &#10003 <input type="radio" name="4-1" >
+          &#10005 <input type="radio" name="4-1" checked></br>
+      </div>
+      <div class="4-2">
+          <label for="4-2">2.在状态图中,终止状态在一个状态图中允许有任意多个。</label>
+          &#10003<input type="radio" name="4-2" checked/>
+          &#10005<input type="radio" name="4-2"/>
+      </div>
+    </form>
   <h3>五、简答题（每题20分，共20分</h3>
-    <ul style="list-style-type: decimal;">
-      <li>简述什么是模型以及模型的表现形式?
-          <form>
-              <textarea name="message" rows="10" cols="100"></textarea>
-          </form>
-      </li>
-    </ul>
-  <button type="button" onclick="alert('Hello World!')">计算分数</button>
+    <p>1.简述什么是模型以及模型的表现形式?</p>
+    <form action="" method="GET" class="short_answer">
+        <div class="5-1">
+            <label for="5-1">1.简述什么是模型以及模型的表现形式？</label> </br>
+            <textarea name="5-1" rows="10" cols="30"> </textarea>        
+        </div>
+        <div class="5-button">
+          <button type="button" onclick="alert('Hello World!')">计算分数</button>
+        </div>
+    </form>
 </body>
 </html>
